@@ -74,8 +74,7 @@ module "verified_access_sg" {
   ingress_cidr_blocks = ["0.0.0.0/0"]
 
   ingress_rules = [
-    "https-443-tcp",
-    "http-80-tcp"
+    "https-443-tcp"
   ]
 
   egress_rules = ["all-all"]

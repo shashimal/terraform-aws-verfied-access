@@ -68,7 +68,7 @@ module "route53_records" {
       name    = "app"
       type    = "CNAME"
       ttl     = 5
-      records = [aws_verifiedaccess_endpoint.access_endpoint]
+      records = [aws_verifiedaccess_endpoint.access_endpoint.endpoint_domain]
     }
   ]
 }
